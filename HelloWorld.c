@@ -21,3 +21,6 @@ static void hello_exit(void)
 
 module_init(hello_init);
 module_exit(hello_exit);
+
+MODULE_AUTHOR("John LiuXin");
+MODULE_DESCRIPTION("Example of kernel module");

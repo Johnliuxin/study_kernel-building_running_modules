@@ -21,6 +21,13 @@ static int int_array[6] = {1, 2, 3, 4, 5, 6};
 static int int_array_num;
 module_param_array(int_array, int, &int_array_num, S_IRUGO);
 
+static int print_module_name(void)
+{
+	printk(KERN_ALERT "module name HelloWorld\n");
+	return 0;
+}
+EXPORT_SYMBOL_GPL(print_module_name);
+
 static int __init hello_init(void)
 {
 	int i;

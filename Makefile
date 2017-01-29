@@ -16,7 +16,7 @@ default:
 endif
 
 clean:
-	rm -f *.o *.ko
+	rm -rf *.o *.dwo .*.dwo .*.cmd *.mod.c .tmp_versions
 
 distclean:
-	rm -f *.o *.ko *.mod.c modules.* Module.*
+	rm -rf *.o *.dwo .*.dwo .*.cmd *.mod.c .tmp_versions modules.* Module.* *.ko
